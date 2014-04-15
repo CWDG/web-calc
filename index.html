@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Calculator</title>
-</head>
-<body>
-	<input type="text" id="formula" />
-	<p id="result"></p>
-	<script>
-	document.getElementById('formula').addEventListener('keyup', function () {
-		try {
-			document.getElementById('result').innerText = eval(this.value);
-		} catch (ex) {}
-	});
-	</script>
-</body>
+<html lang="en-us">
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+  </head>
+  <body>
+    <section class="calc">
+      <input type="text" id="formula" />
+      <p id="result"></p>
+    </section>
+
+    <script>
+      document.getElementById('formula').addEventListener('keyup', function () {
+          try {
+          document.getElementById('result').innerText = eval(this.value);
+          } catch (ex) {}
+          });
+    </script>
+  </body>
 </html>
